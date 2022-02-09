@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Audio App</title>
+    <script type="text/javascript" src="meditation.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <style media="screen">
+
+    </style>
+  </head>
+  <body>
+    <audio id="beach">
+      <source src="beach.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="rain">
+      <source src="rain.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <h1> Your quick meditation App </h1>
+    <div class="flex">
+    <div class="flex" id ="minute-buttons">
+      <button id="2min" onclick="playFor2min()">2 minutes</button>
+      <button id="5min" onclick="playFor5min()">5 minutes</button>
+      <button id="10min" onclick="playFor10min()" class="active-button">10 minutes</button>
+    </div>
+    <div class="flex" id = "play">
+    <svg  width="161" height="131" viewBox="0 0 161 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g onclick="click()" id="triangle">
+    <path id="l1" d="M75.6172 59.485C77.5856 60.6456 77.5856 63.4928 75.6172 64.6534L14.0237 100.971C12.0239 102.15 9.5 100.708 9.5 98.3869L9.5 25.7516C9.5 23.4299 12.0239 21.9882 14.0237 23.1674L75.6172 59.485Z"  fill-opacity="0.49"/>
+    <path id="d1" d="M75.1172 58.985C77.0856 60.1456 77.0856 62.9928 75.1172 64.1534L13.5237 100.471C11.5239 101.65 9 100.208 9 97.8869L9 25.2516C9 22.9299 11.5239 21.4882 13.5237 22.6674L75.1172 58.985Z"  fill-opacity="0.49"/>
+    <path id="d2" d="M117.117 58.985C119.086 60.1456 119.086 62.9928 117.117 64.1534L55.5237 100.471C53.5239 101.65 51 100.208 51 97.8869L51 25.2516C51 22.9299 53.5239 21.4882 55.5237 22.6674L117.117 58.985Z"  fill-opacity="0.49"/>
+    </g>
+<g id="pause" onclick="click()">
+<g id="l1">
+<path id="l1_2" d="M23 23C24.6569 23 26 24.3431 26 26L26 103.138C26 104.795 24.6568 106.138 23 106.138L13 106.138C11.3431 106.138 10 104.795 10 103.138L10 26C10 24.3432 11.3431 23 13 23L23 23Z"  fill-opacity="0.49"/>
+<path id="l1_3" d="M51 23C52.6569 23 54 24.3431 54 26L54 103.138C54 104.795 52.6569 106.138 51 106.138L41 106.138C39.3431 106.138 38 104.795 38 103.138L38 26C38 24.3432 39.3432 23 41 23L51 23Z"  fill-opacity="0.49"/>
+</g>
+<g id="d1">
+<path id="d2" d="M52 23C53.6569 23 55 24.3431 55 26L55 103C55 104.657 53.6569 106 52 106L41 106C39.3431 106 38 104.657 38 103L38 26C38 24.3431 39.3431 23 41 23L52 23Z"  fill-opacity="0.49"/>
+<path id="d2_2" d="M24 23C25.6569 23 27 24.3431 27 26L27 103C27 104.657 25.6569 106 24 106L13 106C11.3431 106 10 104.657 10 103L10 26C10 24.3431 11.3431 23 13 23L24 23Z"  fill-opacity="0.49"/>
+</g>
+<g id="d2_3">
+<path id="d2_4" d="M88 23C89.6569 23 91 24.3431 91 26L91 103C91 104.657 89.6569 106 88 106L77 106C75.3431 106 74 104.657 74 103L74 26C74 24.3431 75.3431 23 77 23L88 23Z"  fill-opacity="0.49"/>
+<path id="d2_5" d="M60 23C61.6569 23 63 24.3431 63 26L63 103C63 104.657 61.6569 106 60 106L49 106C47.3431 106 46 104.657 46 103L46 26C46 24.3431 47.3431 23 49 23L60 23Z"  fill-opacity="0.49"/>
+</g></g></svg></div>
+
+    <div class="flex type-buttons">
+      <button id="beach-butt" class="button-80 active-butt" onclick="chooseBeach()">Beach</button>
+      <button id="rain-butt" class="button-80" onclick="chooseRain()">Rain</button>
+    </div>
+    </div>
+    <p class="disc">Choose your meditation and press play!</p>
+
+
+
+
+
+  </body>
+</html>

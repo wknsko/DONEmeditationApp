@@ -1,0 +1,176 @@
+body {
+  background: rgb(228,224,147);
+background: radial-gradient(circle, rgba(228,224,147,0.7047413793103448) 0%, rgba(230,221,187,0.6681034482758621) 36%, rgba(255,254,216,0.9267241379310345) 100%);
+    text-align: center;
+  font-family: 'Helvetica', sans-serif;}
+
+h1{
+  text-transform: capitalize;
+  font-size: 40px;
+  color:#9fd5ef;
+}
+.disc {
+  font-size: 20px;
+  color:#b5bff2;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/*BUTTON duration */
+/* CSS */
+#minute-buttons {
+  display: block;
+  width: 140px;
+  margin-top: 40px;
+  margin-right: 100px;
+
+
+}
+#minute-buttons button{
+  background-color: #a49fef;
+  width: 120px;
+  border-radius: 100px;
+  box-shadow: rgba(	185, 181, 243,  .2) 0 -25px 18px -14px inset,rgba(	185, 181, 243,  .15) 0 1px 2px,rgba(185, 181, 243,  .15) 0 2px 4px,rgba(185, 181, 243,  .15) 0 4px 8px,rgba(185, 181, 243,  .15) 0 8px 16px,rgba(185, 181, 243,  .15) 0 16px 32px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 30px;
+}
+
+#minute-buttons button:hover {
+  box-shadow: rgba(185, 181, 243,  .25) 0 -25px 18px -14px inset,rgba(185, 181, 243,  .25) 0 1px 2px,rgba(185, 181, 243,  .25) 0 2px 4px,rgba(185, 181, 243,  .25) 0 4px 8px,rgba(185, 181, 243,  .25) 0 8px 16px,rgba(185, 181, 243,  .25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.active-button {
+  color: #7b73e8 !important;
+}
+
+/*BUTTON TYPE*/
+.type-buttons {
+  display: block;
+  width: 140px;
+  margin-top: 40px;
+
+}
+/* CSS */
+.button-80 {
+  background: transparent;
+  width: 120px;
+  backface-visibility: hidden;
+  border-radius: .375rem;
+  border-style: solid;
+  border-width: .125rem;
+  border-color: #89cbeb;
+  box-sizing: border-box;
+  color: #89cbeb;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.015rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: .875rem 1.125rem;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.button-80:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button-80:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.button-80:focus {
+  outline: 0 solid transparent;
+}
+
+.button-80:focus:before {
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button-80:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button-80:focus:not(:focus-visible):before {
+  border-width: 0;
+}
+
+.button-80:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+ .active-butt {
+  color: #9fadef;
+  border-color: #9fadef;
+}
+
+/* SVG PLAY BUTTON */
+svg {
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: -20px;
+  margin-right: 20px;
+}
+#d1, #d2 {
+  fill: #9189EB;
+}
+#l1 {
+  fill: #89D3EB;
+}
+#d1, #d2, #l1 {
+  transition: all 2s ease;
+}
+#d2 {
+  transform: translateX(-100%);
+}
+svg:hover #l1 {
+  transform: translateX(20%);
+}
+svg:hover #d1 {
+  transform: translateX(40%);
+  opacity: 0;
+}
+svg:hover #d2 {
+  transform: translateX(0%);
+
+}
+#pause {
+  opacity: 0;
+
+}
+#triangle {
+  opacity: 1;
+}
